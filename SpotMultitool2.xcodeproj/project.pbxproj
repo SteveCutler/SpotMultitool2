@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FC622E322B5AF5C700367BDD /* SpotMultitool2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E312B5AF5C700367BDD /* SpotMultitool2App.swift */; };
-		FC622E342B5AF5C700367BDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E332B5AF5C700367BDD /* ContentView.swift */; };
 		FC622E362B5AF5C800367BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC622E352B5AF5C800367BDD /* Assets.xcassets */; };
 		FC622E392B5AF5C800367BDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC622E382B5AF5C800367BDD /* Preview Assets.xcassets */; };
 		FC622E432B5AF5C800367BDD /* SpotMultitool2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E422B5AF5C800367BDD /* SpotMultitool2Tests.swift */; };
@@ -16,12 +15,21 @@
 		FC622E4F2B5AF5C800367BDD /* SpotMultitool2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E4E2B5AF5C800367BDD /* SpotMultitool2UITestsLaunchTests.swift */; };
 		FC622E552B5AF5C900367BDD /* SpotMultitool2 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FC622E542B5AF5C900367BDD /* SpotMultitool2 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC622E5A2B5AF5C900367BDD /* SpotMultitool2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E592B5AF5C900367BDD /* SpotMultitool2App.swift */; };
-		FC622E5C2B5AF5C900367BDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E5B2B5AF5C900367BDD /* ContentView.swift */; };
 		FC622E5E2B5AF5C900367BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC622E5D2B5AF5C900367BDD /* Assets.xcassets */; };
 		FC622E612B5AF5C900367BDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC622E602B5AF5C900367BDD /* Preview Assets.xcassets */; };
 		FC622E6B2B5AF5C900367BDD /* SpotMultitool2_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E6A2B5AF5C900367BDD /* SpotMultitool2_Watch_AppTests.swift */; };
 		FC622E752B5AF5C900367BDD /* SpotMultitool2_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E742B5AF5C900367BDD /* SpotMultitool2_Watch_AppUITests.swift */; };
 		FC622E772B5AF5C900367BDD /* SpotMultitool2_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E762B5AF5C900367BDD /* SpotMultitool2_Watch_AppUITestsLaunchTests.swift */; };
+		FC622E912B5AF5E100367BDD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E8D2B5AF5E000367BDD /* ViewModel.swift */; };
+		FC622E922B5AF5E100367BDD /* TextToSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E8E2B5AF5E000367BDD /* TextToSpeechManager.swift */; };
+		FC622E932B5AF5E100367BDD /* SpeechToTextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E8F2B5AF5E100367BDD /* SpeechToTextManager.swift */; };
+		FC622E942B5AF5E100367BDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E902B5AF5E100367BDD /* ContentView.swift */; };
+		FC622E992B5AF60600367BDD /* TextToSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E952B5AF60600367BDD /* TextToSpeechManager.swift */; };
+		FC622E9A2B5AF60600367BDD /* SpeechToTextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E962B5AF60600367BDD /* SpeechToTextManager.swift */; };
+		FC622E9B2B5AF60600367BDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E972B5AF60600367BDD /* ContentView.swift */; };
+		FC622E9C2B5AF60600367BDD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC622E982B5AF60600367BDD /* ViewModel.swift */; };
+		FC622EA22B5AF67500367BDD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FC622EA12B5AF67500367BDD /* Alamofire */; };
+		FC622EA42B5AF67900367BDD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FC622EA32B5AF67900367BDD /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +82,21 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC731DD42B5ECF6C003D4BAA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC622E2E2B5AF5C700367BDD /* SpotMultitool2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMultitool2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC622E312B5AF5C700367BDD /* SpotMultitool2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMultitool2App.swift; sourceTree = "<group>"; };
-		FC622E332B5AF5C700367BDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC622E352B5AF5C800367BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC622E382B5AF5C800367BDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC622E3E2B5AF5C800367BDD /* SpotMultitool2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotMultitool2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +106,6 @@
 		FC622E4E2B5AF5C800367BDD /* SpotMultitool2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMultitool2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC622E542B5AF5C900367BDD /* SpotMultitool2 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpotMultitool2 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC622E592B5AF5C900367BDD /* SpotMultitool2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMultitool2App.swift; sourceTree = "<group>"; };
-		FC622E5B2B5AF5C900367BDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC622E5D2B5AF5C900367BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC622E602B5AF5C900367BDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC622E662B5AF5C900367BDD /* SpotMultitool2 Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpotMultitool2 Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +113,19 @@
 		FC622E702B5AF5C900367BDD /* SpotMultitool2 Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpotMultitool2 Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC622E742B5AF5C900367BDD /* SpotMultitool2_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMultitool2_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		FC622E762B5AF5C900367BDD /* SpotMultitool2_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMultitool2_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC622E8D2B5AF5E000367BDD /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FC622E8E2B5AF5E000367BDD /* TextToSpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechManager.swift; sourceTree = "<group>"; };
+		FC622E8F2B5AF5E100367BDD /* SpeechToTextManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextManager.swift; sourceTree = "<group>"; };
+		FC622E902B5AF5E100367BDD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC622E952B5AF60600367BDD /* TextToSpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechManager.swift; sourceTree = "<group>"; };
+		FC622E962B5AF60600367BDD /* SpeechToTextManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextManager.swift; sourceTree = "<group>"; };
+		FC622E972B5AF60600367BDD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC622E982B5AF60600367BDD /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FC731DC42B5ECF6B003D4BAA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FC731DC62B5ECF6B003D4BAA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FC731DC92B5ECF6B003D4BAA /* Complication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complication.swift; sourceTree = "<group>"; };
+		FC731DCB2B5ECF6C003D4BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC731DCD2B5ECF6C003D4BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC622EA22B5AF67500367BDD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC622EA42B5AF67900367BDD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +185,9 @@
 				FC622E582B5AF5C900367BDD /* SpotMultitool2 Watch App */,
 				FC622E692B5AF5C900367BDD /* SpotMultitool2 Watch AppTests */,
 				FC622E732B5AF5C900367BDD /* SpotMultitool2 Watch AppUITests */,
+				FC731DC82B5ECF6B003D4BAA /* Complication */,
 				FC622E2F2B5AF5C700367BDD /* Products */,
+				FC622EA02B5AF67500367BDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,7 +208,10 @@
 			isa = PBXGroup;
 			children = (
 				FC622E312B5AF5C700367BDD /* SpotMultitool2App.swift */,
-				FC622E332B5AF5C700367BDD /* ContentView.swift */,
+				FC622E902B5AF5E100367BDD /* ContentView.swift */,
+				FC622E8F2B5AF5E100367BDD /* SpeechToTextManager.swift */,
+				FC622E8E2B5AF5E000367BDD /* TextToSpeechManager.swift */,
+				FC622E8D2B5AF5E000367BDD /* ViewModel.swift */,
 				FC622E352B5AF5C800367BDD /* Assets.xcassets */,
 				FC622E372B5AF5C800367BDD /* Preview Content */,
 			);
@@ -211,7 +247,10 @@
 			isa = PBXGroup;
 			children = (
 				FC622E592B5AF5C900367BDD /* SpotMultitool2App.swift */,
-				FC622E5B2B5AF5C900367BDD /* ContentView.swift */,
+				FC622E972B5AF60600367BDD /* ContentView.swift */,
+				FC622E982B5AF60600367BDD /* ViewModel.swift */,
+				FC622E962B5AF60600367BDD /* SpeechToTextManager.swift */,
+				FC622E952B5AF60600367BDD /* TextToSpeechManager.swift */,
 				FC622E5D2B5AF5C900367BDD /* Assets.xcassets */,
 				FC622E5F2B5AF5C900367BDD /* Preview Content */,
 			);
@@ -243,6 +282,25 @@
 			path = "SpotMultitool2 Watch AppUITests";
 			sourceTree = "<group>";
 		};
+		FC622EA02B5AF67500367BDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC731DC42B5ECF6B003D4BAA /* WidgetKit.framework */,
+				FC731DC62B5ECF6B003D4BAA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC731DC82B5ECF6B003D4BAA /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				FC731DC92B5ECF6B003D4BAA /* Complication.swift */,
+				FC731DCB2B5ECF6C003D4BAA /* Assets.xcassets */,
+				FC731DCD2B5ECF6C003D4BAA /* Info.plist */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,9 +316,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				FC622E9F2B5AF67000367BDD /* PBXTargetDependency */,
 				FC622E572B5AF5C900367BDD /* PBXTargetDependency */,
 			);
 			name = SpotMultitool2;
+			packageProductDependencies = (
+				FC622EA12B5AF67500367BDD /* Alamofire */,
+			);
 			productName = SpotMultitool2;
 			productReference = FC622E2E2B5AF5C700367BDD /* SpotMultitool2.app */;
 			productType = "com.apple.product-type.application";
@@ -308,12 +370,17 @@
 				FC622E502B5AF5C900367BDD /* Sources */,
 				FC622E512B5AF5C900367BDD /* Frameworks */,
 				FC622E522B5AF5C900367BDD /* Resources */,
+				FC731DD42B5ECF6C003D4BAA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC622EA62B5AF67C00367BDD /* PBXTargetDependency */,
 			);
 			name = "SpotMultitool2 Watch App";
+			packageProductDependencies = (
+				FC622EA32B5AF67900367BDD /* Alamofire */,
+			);
 			productName = "SpotMultitool2 Watch App";
 			productReference = FC622E542B5AF5C900367BDD /* SpotMultitool2 Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -397,6 +464,9 @@
 				Base,
 			);
 			mainGroup = FC622E252B5AF5C700367BDD;
+			packageReferences = (
+				FC622E9D2B5AF61700367BDD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FC622E2F2B5AF5C700367BDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -465,8 +535,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC622E342B5AF5C700367BDD /* ContentView.swift in Sources */,
+				FC622E922B5AF5E100367BDD /* TextToSpeechManager.swift in Sources */,
+				FC622E942B5AF5E100367BDD /* ContentView.swift in Sources */,
+				FC622E912B5AF5E100367BDD /* ViewModel.swift in Sources */,
 				FC622E322B5AF5C700367BDD /* SpotMultitool2App.swift in Sources */,
+				FC622E932B5AF5E100367BDD /* SpeechToTextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,8 +564,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC622E5C2B5AF5C900367BDD /* ContentView.swift in Sources */,
+				FC622E9C2B5AF60600367BDD /* ViewModel.swift in Sources */,
+				FC622E9A2B5AF60600367BDD /* SpeechToTextManager.swift in Sources */,
 				FC622E5A2B5AF5C900367BDD /* SpotMultitool2App.swift in Sources */,
+				FC622E9B2B5AF60600367BDD /* ContentView.swift in Sources */,
+				FC622E992B5AF60600367BDD /* TextToSpeechManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +616,14 @@
 			isa = PBXTargetDependency;
 			target = FC622E532B5AF5C900367BDD /* SpotMultitool2 Watch App */;
 			targetProxy = FC622E712B5AF5C900367BDD /* PBXContainerItemProxy */;
+		};
+		FC622E9F2B5AF67000367BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FC622E9E2B5AF67000367BDD /* Alamofire */;
+		};
+		FC622EA62B5AF67C00367BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FC622EA52B5AF67C00367BDD /* Alamofire */;
 		};
 /* End PBXTargetDependency section */
 
@@ -596,12 +680,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required for voice dictation";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -651,17 +743,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required for voice dictation";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
 		FC622E7B2B5AF5C900367BDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -670,8 +772,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SpotMultitool2;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required for voice dictation";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Minotaur.SpotMultitool2;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,14 +794,16 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		FC622E7C2B5AF5C900367BDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -700,8 +812,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SpotMultitool2;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Required for some functionality";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required for voice dictation";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Minotaur.SpotMultitool2;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -715,7 +835,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -732,12 +852,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SpotMultitool2;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -765,12 +886,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SpotMultitool2;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1021,6 +1143,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC622E9D2B5AF61700367BDD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC622E9E2B5AF67000367BDD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC622E9D2B5AF61700367BDD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FC622EA12B5AF67500367BDD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC622E9D2B5AF61700367BDD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FC622EA32B5AF67900367BDD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC622E9D2B5AF61700367BDD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FC622EA52B5AF67C00367BDD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC622E9D2B5AF61700367BDD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC622E262B5AF5C700367BDD /* Project object */;
 }

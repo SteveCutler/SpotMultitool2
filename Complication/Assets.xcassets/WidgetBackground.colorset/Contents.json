@@ -1,0 +1,27 @@
+{
+  "colors" : [
+    {
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "contrast",
+          "value" : "high"
+        }
+      ],
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "watchos",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "watch"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
